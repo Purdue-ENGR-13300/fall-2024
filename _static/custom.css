@@ -1,0 +1,65 @@
+.text-left{
+  text-align: left !important;
+}
+.text-right{
+  text-align: right !important;
+}
+
+/* Example custom colors for light and dark theme */
+html[data-theme="dark"] {
+  --sample-output-bg-color: var(--lt-color-gray-700);
+  --test-case-table-rule-color: var(--lt-color-gray-700);
+}
+
+html[data-theme="light"] {
+  --sample-output-bg-color: var(--lt-color-gray-200);
+  --test-case-table-rule-color: var(--lt-color-gray-900);
+}
+
+.admonition.sample-output, div.admonition.sample-output {
+  font-family: monospace;
+	border-color: var(--pst-color-attention);
+  background-color: var(--sample-output-bg-color);
+}
+
+.admonition.sample-output > .admonition-title::before, div.admonition.sample-output > .admonition-title::before {
+	background-color: var(--pst-color-attention-bg);
+}
+
+.admonition.sample-output > .admonition-title::after, div.admonition.sample-output > .admonition-title::after {
+	color: var(--pst-color-attention);
+  content: ""; /* Font Awesome icon for "code-compare" */
+}
+
+table.test-case-table {
+  border-block: 2px solid var(--test-case-table-rule-color);
+}
+
+table th {
+  border-bottom: 1px solid var(--test-case-table-rule-color);
+}
+
+table td {
+  border-bottom: none;
+}
+
+.deliverables {
+  background-color: #cbb992;
+}
+
+.deliverables th {
+  background-color: #595959;
+}
+
+.deliverables th * {
+  color: white;
+}
+
+.deliverables p {
+  color: black;
+}
+
+.user-input {
+  font-weight: bold;
+  font-style: italic;
+}
