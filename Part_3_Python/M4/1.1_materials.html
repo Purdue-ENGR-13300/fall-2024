@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8.1.1. Materials &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=13c7fbd9" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_3_Python/M4/1.1_materials';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.1.2. Task 0" href="tasks/pre_0/a/instructions.html" />
+    <link rel="prev" title="8.1. Pre-Class Assignments" href="1_pre-class_material.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Purdue University ENGR 13300 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Purdue University ENGR 13300 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Transforming Ideas to Innovation
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_software/course_software.html">Course Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Professional_Preparation/pwl_1_introduction.html">West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_2_career_exploration.html">Career Exploration (EYM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_3_personal_activity.html">Personal Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_4_cultural_experience.html">Cultural Experience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_5_reflections.html">Reflections</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Professional_Preparation/pin_1_introduction.html">Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_2_build_a_schedule.html">Academic Success</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_3_resume.html">Resume Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_4_personal_activity.html">Personal Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_5_cultural_experience.html">Cultural Experience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_6_reflections.html">Reflections</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/0_overview.html">1. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/1_pre-class_material.html">1.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/1.1_materials.html">1.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/pre_0/a/instructions.html">1.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/2_team_assignments.html">1.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_1/a/instructions.html">1.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_2/a/instructions.html">1.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_3/a/instructions.html">1.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/3_ind_assignments.html">1.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_1/a/instructions.html">1.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_2/a/instructions.html">1.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/0_overview.html">2. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/pre_0/a/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_1/a/instructions.html">2.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_2/a/instructions.html">2.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_3/a/instructions.html">2.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/3_ind_assignments.html">2.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_1/a/instructions.html">2.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_2/a/instructions.html">2.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/0_overview.html">3. <strong class="program">MS Excel</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/1_pre-class_material.html">3.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/1.1_materials.html">3.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/pre_0/a/instructions.html">3.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/2_team_assignments.html">3.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_1/a/instructions.html">3.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_3/a/instructions.html">3.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_4/a/instructions.html">3.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/3_ind_assignments.html">3.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_1/a/instructions.html">3.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_2/a/instructions.html">3.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dream Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Part_2_Dream_Project/M1/0_overview.html">Dream Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/0_overview.html">4. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/2_team_assignments.html">4.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/team_1/instructions.html">4.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/3_ind_assignments.html">4.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/ind_1/instructions.html">4.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M1/0_overview.html">5. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M1/1_pre-class_material.html">5.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M1/1.1_materials.html">5.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/pre_0/a/instructions.html">5.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M1/2_team_assignments.html">5.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_1/b/instructions.html">5.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_2/a/instructions.html">5.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_3/b/instructions.html">5.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M1/3_ind_assignments.html">5.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/ind_1/a/instructions.html">5.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/ind_2/b/instructions.html">5.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M2/0_overview.html">6. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/1_pre-class_material.html">6.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/1.1_materials.html">6.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/pre_0/a/instructions.html">6.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/2_team_assignments.html">6.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_1/a/instructions.html">6.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_2/a/instructions.html">6.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_3/a/instructions.html">6.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/3_ind_assignments.html">6.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/ind_1/a/instructions.html">6.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/ind_2/a/instructions.html">6.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M3/0_overview.html">7. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/1_pre-class_material.html">7.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/1.1_materials.html">7.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/pre_0/a/instructions.html">7.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/2_team_assignments.html">7.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_1/a/instructions.html">7.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_2/a/instructions.html">7.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_3/a/instructions.html">7.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/3_ind_assignments.html">7.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/ind_1/a/instructions.html">7.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/ind_2/a/instructions.html">7.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_overview.html">8. <strong class="program">Python</strong> 4</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="1_pre-class_material.html">8.1. Pre-Class Assignments</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">8.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/pre_0/a/instructions.html">8.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="2_team_assignments.html">8.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_1/a/instructions.html">8.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_2/a/instructions.html">8.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_3/a/instructions.html">8.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="3_ind_assignments.html">8.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="tasks/ind_1/a/instructions.html">8.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/ind_2/a/instructions.html">8.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Team Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/0_overview.html">9. Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/0_overview.html">10. Checkpoint 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/1_pre-class_material.html">10.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/1.1_materials.html">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M3/0_overview.html">11. Demo</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M3/1_team_assignments.html">11.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_1/a/instructions.html">11.1.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_2/a/instructions.html">11.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_3/a/instructions.html">11.1.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/0_overview.html">12. <strong class="program">MATLAB</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/2_team_assignments.html">12.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_3/a/instructions.html">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/3_ind_assignments.html">12.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/ind_1/a/instructions.html">12.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/ind_2/a/instructions.html">12.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/0_overview.html">13. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/1_pre-class_material.html">13.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/1.1_materials.html">13.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/pre_0/a/instructions.html">13.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/2_team_assignments.html">13.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_1/a/instructions.html">13.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_2/a/instructions.html">13.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_3/a/instructions.html">13.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/3_ind_assignments.html">13.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/ind_1/a/instructions.html">13.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/ind_2/a/instructions.html">13.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/0_overview.html">14. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/pre_0/a/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_1/a/instructions.html">14.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_2/a/instructions.html">14.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_3/a/instructions.html">14.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/3_ind_assignments.html">14.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/ind_1/a/instructions.html">14.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/ind_2/a/instructions.html">14.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/0_overview.html">15. <strong class="program">MATLAB</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/1_pre-class_material.html">15.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/1.1_materials.html">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/pre_0/a/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_1/a/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/ind_1/a/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Individual Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_Individual_Project/M1/0_overview.html">16. Individual Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/1_proposal_guidelines.html">16.1. Individual Project Proposal Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/2_project_guidelines.html">16.2. Individual Project Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/3_report_guidelines.html">16.3. Individual Report Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/4_demo_rubric.html">16.4. Individual Project Demo and Report Rubric</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/fall-2024/issues/new?title=Issue%20on%20page%20%2FPart_3_Python/M4/1.1_materials.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Materials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">STRINGS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-as-sequences-of-characters">Strings as sequences of characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-literals">String literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-manipulation-as-an-immutable-sequence">String manipulation as an immutable sequence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-methods">String methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-i-o">File i/o</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-input">File Input</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-function"><code class="code highlight python docutils literal highlight-python"><span class="nb">open</span><span class="p">()</span></code> function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#close-function"><code class="code highlight python docutils literal highlight-python"><span class="n">close</span><span class="p">()</span></code> function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#with-statement"><code class="code highlight python docutils literal highlight-python"><span class="k">with</span></code> statement</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-output">File Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib"><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-matplotlib">Installing <code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-plotting">Basic Plotting:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-plots">Types of Plots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-plots">Customizing Plots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-plots">Multiple Plots</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Oct 24, 2024 | 474 words | 5 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="materials">
+<span id="py-m4-python-4-materials"></span><h1><span class="section-number">8.1.1. </span>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h1>
+<section id="strings">
+<h2>STRINGS<a class="headerlink" href="#strings" title="Link to this heading">#</a></h2>
+<p>Here is the link to the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"><strong class="program">Python</strong> Official Documentation on strings</a></p>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/983291/sp/98329100/embedIframeJs/uiconf_id/44472651/partner_id/983291?iframeembed=true&playerId=kaltura_player&entry_id=1_9eau9o8j&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_rw9j6xgg" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="811_1_strings"></iframe>
+<p><a class="reference download internal" download="" href="../../_downloads/99b887a6f452f42d36afa888dcf83a31/01_strings.py"><code class="xref download docutils literal notranslate"><span class="pre">01_strings.py</span></code></a></p>
+<section id="strings-as-sequences-of-characters">
+<h3>Strings as sequences of characters<a class="headerlink" href="#strings-as-sequences-of-characters" title="Link to this heading">#</a></h3>
+<p>A string is a sequence of characters. In Python, strings are immutable sequences
+of Unicode code points.</p>
+</section>
+<section id="string-literals">
+<h3>String literals<a class="headerlink" href="#string-literals" title="Link to this heading">#</a></h3>
+<p>A string literal is a sequence of characters enclosed in single quotes (’…’)
+or double quotes (”…”).</p>
+</section>
+<section id="string-manipulation-as-an-immutable-sequence">
+<h3>String manipulation as an immutable sequence<a class="headerlink" href="#string-manipulation-as-an-immutable-sequence" title="Link to this heading">#</a></h3>
+<p>For strings x and y with indices i, j and k, the following operations are supported:</p>
+<ul class="simple">
+<li><p>Indexing : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="p">]</span></code></p></li>
+<li><p>Slicing : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="p">]</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="p">:</span><span class="n">k</span><span class="p">]</span> <span class="c1"># start, stop, step</span></code></p></li>
+<li><p>Concatenation : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></p></li>
+<li><p>Repetition : <code class="code highlight python docutils literal highlight-python"><span class="n">n</span> <span class="o">*</span> <span class="n">x</span></code>, where n is an integer</p></li>
+<li><p>Membership test : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="ow">in</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">y</span></code></p></li>
+<li><p>Length : <code class="code highlight python docutils literal highlight-python"><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></p></li>
+<li><p>Iteration : <code class="code highlight python docutils literal highlight-python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span></code></p></li>
+<li><p>Comparison : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">==</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span></code></p></li>
+<li><p>Searching : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">y</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="n">y</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">y</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="o">.</span><span class="n">rindex</span><span class="p">(</span><span class="n">y</span><span class="p">)</span></code></p></li>
+<li><p>Counting : <code class="code highlight python docutils literal highlight-python"><span class="n">x</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">y</span><span class="p">)</span></code></p></li>
+<li><p>Ordering : <code class="code highlight python docutils literal highlight-python"><span class="nb">sorted</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="nb">reversed</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></p></li>
+</ul>
+</section>
+<section id="string-methods">
+<h3>String methods<a class="headerlink" href="#string-methods" title="Link to this heading">#</a></h3>
+<p>For strings x and y, the following methods are supported:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>      <span class="c1"># lowers the case of all characters</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>      <span class="c1"># uppercases all characters</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>      <span class="c1"># capitalizes the first character of each word</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="c1"># capitalizes the first character of the string</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>      <span class="c1"># splits a string into a list of substrings</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>      <span class="c1"># removes leading and trailing whitespace (lstrip, rstrip)</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">()</span>    <span class="c1"># replaces a substring with another substring (old, new)</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>       <span class="c1"># joins a list of substrings into a single string</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">()</span> <span class="c1"># checks if a string starts with a specified prefix (prefix, start, end)</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">endswith</span><span class="p">()</span>   <span class="c1"># checks if a string ends with a specified suffix</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>    <span class="c1"># checks if all characters are alphabetic, returns Boolean</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>    <span class="c1"># checks if all characters are digits, returns Boolean</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>    <span class="c1"># checks if all characters are alphanumeric, returns Boolean</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>    <span class="c1"># checks if all characters are lowercase, returns Boolean</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>    <span class="c1"># checks if all characters are uppercase, returns Boolean</span>
+<span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">isspace</span><span class="p">()</span>    <span class="c1"># checks if all characters are whitespace, returns Boolean</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="file-i-o">
+<h2>File i/o<a class="headerlink" href="#file-i-o" title="Link to this heading">#</a></h2>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/983291/sp/98329100/embedIframeJs/uiconf_id/44472651/partner_id/983291?iframeembed=true&playerId=kaltura_player&entry_id=1_qplembs4&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_asrhmj7r" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="811_2_fileio"></iframe>
+<p><a class="reference download internal" download="" href="../../_downloads/418de4e7b3c2296742ebef360b64846e/02_file_io.py"><code class="xref download docutils literal notranslate"><span class="pre">02_file_io.py</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/e856f41c1f36d168092320da3d27fdc1/hail_purdue.txt"><code class="xref download docutils literal notranslate"><span class="pre">hail_purdue.txt</span></code></a></p>
+<p>The <a class="reference download internal" download="" href="../../_downloads/e6de0577314e60483fa7fa152d1fdbdb/playing_with_strings.py"><code class="xref download docutils literal notranslate"><span class="pre">playing_with_strings.py</span></code></a> file is a
+<strong class="program">Python</strong> script which shows you how to use the <code class="code highlight python docutils literal highlight-python"><span class="n">strip</span><span class="p">()</span></code> and
+<code class="code highlight python docutils literal highlight-python"><span class="n">split</span><span class="p">()</span></code> functions.  Open this file in <strong class="program">VS Code</strong>, read it, and
+experiment with it before doing the next exercise.</p>
+<section id="file-input">
+<h3>File Input<a class="headerlink" href="#file-input" title="Link to this heading">#</a></h3>
+<section id="open-function">
+<h4><code class="code highlight python docutils literal highlight-python"><span class="nb">open</span><span class="p">()</span></code> function<a class="headerlink" href="#open-function" title="Link to this heading">#</a></h4>
+<p>Opens a file and returns a file object.</p>
+<p>Syntax: <code class="code highlight python docutils literal highlight-python"><span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span></code></p>
+<p>Example: <code class="code highlight python docutils literal highlight-python"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hail_purdue.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span></code></p>
+<ul class="simple">
+<li><p>read mode (default) - “r”</p></li>
+<li><p>write mode - “w”</p></li>
+<li><p>append mode - “a”</p></li>
+<li><p>binary mode - “b”</p></li>
+<li><p>read/write mode - “r+”</p></li>
+<li><p>read/write binary mode - “rb+”</p></li>
+<li><p>read/write append mode - “a+”</p></li>
+<li><p>read/write append binary mode - “ab+”</p></li>
+</ul>
+</section>
+<section id="close-function">
+<h4><code class="code highlight python docutils literal highlight-python"><span class="n">close</span><span class="p">()</span></code> function<a class="headerlink" href="#close-function" title="Link to this heading">#</a></h4>
+<p>Closes the file. Must be called after the file is opened.</p>
+<p>Syntax: <code class="code highlight python docutils literal highlight-python"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></p>
+</section>
+<section id="with-statement">
+<h4><code class="code highlight python docutils literal highlight-python"><span class="k">with</span></code> statement<a class="headerlink" href="#with-statement" title="Link to this heading">#</a></h4>
+<p>automatically closes the file</p>
+<p>Syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+   <span class="c1"># code block</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">read</span><span class="p">()</span></code> method - reads the entire file</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">readline</span><span class="p">()</span></code> method - reads a single line from the file</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">readlines</span><span class="p">()</span></code> method - reads all the lines from the file</p></li>
+</ul>
+</section>
+</section>
+<section id="file-output">
+<h3>File Output<a class="headerlink" href="#file-output" title="Link to this heading">#</a></h3>
+<p><code class="code highlight python docutils literal highlight-python"><span class="n">write</span><span class="p">()</span></code> method - writes a string to the file</p>
+<p><code class="code highlight python docutils literal highlight-python"><span class="n">writelines</span><span class="p">()</span></code> method - writes a list of strings to the file</p>
+</section>
+</section>
+<section id="matplotlib">
+<h2><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code><a class="headerlink" href="#matplotlib" title="Link to this heading">#</a></h2>
+<p>Here is the link to the <a class="reference external" href="https://matplotlib.org/stable/contents.html"><strong class="program">Python</strong> Official Documentation on <code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code></a></p>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/983291/sp/98329100/embedIframeJs/uiconf_id/44472651/partner_id/983291?iframeembed=true&playerId=kaltura_player&entry_id=1_f7nzm9lu&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_bxzgsf4h" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="811_3_matplotlib"></iframe>
+<p><a class="reference download internal" download="" href="../../_downloads/e54082868c33d5894678a8996bd0b30b/03_matplotlib.py"><code class="xref download docutils literal notranslate"><span class="pre">03_matplotlib.py</span></code></a></p>
+<p><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code> is a plotting library for the <strong class="program">Python</strong> programming language and its numerical mathematics extension NumPy.</p>
+<section id="installing-matplotlib">
+<h3>Installing <code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code><a class="headerlink" href="#installing-matplotlib" title="Link to this heading">#</a></h3>
+<p>Enter the following command in the terminal:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">matplotlib</span>
+</pre></div>
+</div>
+</section>
+<section id="basic-plotting">
+<h3>Basic Plotting:<a class="headerlink" href="#basic-plotting" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The most basic plot is the line plot.</p></li>
+<li><p>A line plot is created by specifying the <code class="code highlight python docutils literal highlight-python"><span class="n">x</span></code> and <code class="code highlight python docutils literal highlight-python"><span class="n">y</span></code> values of the data points you want to plot and then calling the <code class="code highlight python docutils literal highlight-python"><span class="n">plot</span><span class="p">()</span></code> function.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">plot</span><span class="p">()</span></code> function takes the <code class="code highlight python docutils literal highlight-python"><span class="n">x</span></code> and <code class="code highlight python docutils literal highlight-python"><span class="n">y</span></code> values as arguments and creates a line plot.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">show</span><span class="p">()</span></code> function is used to display the plot.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">title</span><span class="p">()</span></code>, <code class="code highlight python docutils literal highlight-python"><span class="n">xlabel</span><span class="p">()</span></code>, and <code class="code highlight python docutils literal highlight-python"><span class="n">ylabel</span><span class="p">()</span></code> functions are used to set the title, x-axis label, and y-axis label of the plot, respectively.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">savefig</span><span class="p">()</span></code> function is used to save the plot as an image file.</p></li>
+</ul>
+<section id="types-of-plots">
+<h4>Types of Plots<a class="headerlink" href="#types-of-plots" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code> provides a variety of plots that can be used to visualize data.</p></li>
+<li><p>Some commonly used plots are: Line Plot, Scatter Plot, Bar Plot, Histogram, Pie Chart, Box Plot, Heatmap, etc.</p></li>
+</ul>
+</section>
+<section id="customizing-plots">
+<h4>Customizing Plots<a class="headerlink" href="#customizing-plots" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code> allows you to customize the appearance of the plots by setting various properties such as the color, line style, marker style, etc.</p></li>
+<li><p>You can also add labels, titles, legends, and annotations to the plots.</p></li>
+</ul>
+</section>
+<section id="multiple-plots">
+<h4>Multiple Plots<a class="headerlink" href="#multiple-plots" title="Link to this heading">#</a></h4>
+<ul>
+<li><p>You can create multiple plots in the same figure by using the <code class="code highlight python docutils literal highlight-python"><span class="n">subplot</span><span class="p">()</span></code> function.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">subplot</span><span class="p">()</span></code> function takes three arguments: the number of rows, the number of columns, and the index of the subplot.</p></li>
+<li><p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Create the first subplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># Create the second subplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>You can create multiple plots in the same figure by calling the <code class="code highlight python docutils literal highlight-python"><span class="n">subplot</span><span class="p">()</span></code> function multiple times.</p></li>
+<li><p>The <code class="code highlight python docutils literal highlight-python"><span class="n">tight_layout</span><span class="p">()</span></code> function is used to adjust the spacing between the plots.</p></li>
+</ul>
+<!--
+1. {program}`Python` provides many built-in methods to manipulate strings.
+   Familiarize yourself with these methods, by reviewing their [official
+   documentation](https://docs.python.org/3/library/stdtypes.html#string-methods).
+
+2. The {download}`playing with strings.py
+   </Part_3_Python/M4/playing_with_strings.py>` file is a {program}`Python`
+   script which shows you how to use the {python}`strip()` and {python}`split()`
+   functions.  Open this file in {program}`VS Code`, read it, and experiment
+   with it before doing the next exercise.
+
+3. Read {program}`matplotlib's` [Quick start
+   guide](https://matplotlib.org/stable/users/explain/quick_start.html) to learn
+   how to create plots in {program}`Python`.
+
+
+## Videos
+
+```{youtube} atnoTlC0a6I
+```
+
+```{youtube} LC5BCsAliiE
+```
+
+```{youtube} DOZxpKOqn78
+```
+--></section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_3_Python/M4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1_pre-class_material.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">8.1. </span>Pre-Class Assignments</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tasks/pre_0/a/instructions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8.1.2. </span>Task 0</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">STRINGS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-as-sequences-of-characters">Strings as sequences of characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-literals">String literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-manipulation-as-an-immutable-sequence">String manipulation as an immutable sequence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-methods">String methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-i-o">File i/o</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-input">File Input</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-function"><code class="code highlight python docutils literal highlight-python"><span class="nb">open</span><span class="p">()</span></code> function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#close-function"><code class="code highlight python docutils literal highlight-python"><span class="n">close</span><span class="p">()</span></code> function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#with-statement"><code class="code highlight python docutils literal highlight-python"><span class="k">with</span></code> statement</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-output">File Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib"><code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-matplotlib">Installing <code class="code highlight python docutils literal highlight-python"><span class="n">matplotlib</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-plotting">Basic Plotting:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-plots">Types of Plots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-plots">Customizing Plots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-plots">Multiple Plots</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/fall-2024/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

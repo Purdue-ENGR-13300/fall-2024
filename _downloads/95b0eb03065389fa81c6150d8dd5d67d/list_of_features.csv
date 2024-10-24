@@ -1,0 +1,62 @@
+Feature,Chromosome positions,Number of chromosome sets,Genotype,Maximum genotype combinations,Phenotype
+Head,1,2,SS,3,Oval Shaped Head
+,,,Ss,,Oval Shaped Head
+,,,ss,,Round Shaped Head
+Chin,2,2,CC,3,Square Chin
+,,,Cc,,Square Chin
+,,,cc,,Round Chin
+Neck,3,2,WW,3,Wide Neck
+,,,Ww,,Wide Neck
+,,,ww,,Skinny Neck
+Ears,4,2,RR,3,Small Ears
+,,,Rr,,Small Ears
+,,,rr,,Large Ears
+Ear lobe,5,2,OO,3,Has Ear Lobe
+,,,Oo,,Has Ear Lobe
+,,,oo,,No Ear Lobe
+Nose length,6,2,NN,3,Long Nose
+,,,Nn,,Long Nose
+,,,nn,,Short Nose
+Nose width,7,2,NN,3,Skinny Nose
+,,,Nn,,Skinny Nose
+,,,nn,,Wide Nose
+Mouth,8,2,MM,3,Large Mouth
+,,,Mm,,Large Mouth
+,,,mm,,Small Mouth
+Lips,9,2,LL,3,Wide Lips
+,,,Ll,,Wide Lips
+,,,ll,,Thin Lips
+Teeth,10,2,TT,3,Straight Teeth
+,,,Tt,,Straight Teeth
+,,,tt,,Crooked Teeth
+Eyes position,11,2,DD,3,Eyes Close Together
+,,,Dd,,Eyes Close Together
+,,,dd,,Eyes Far Apart
+Eye color,12; 13; 14; 15,8,EEEEEEEE,9,Black Eyes
+,,,EEEEEEEe,,Brown Eyes
+,,,EEEEEEee,,Hazel Eyes
+,,,EEEEEeee,,Grey
+,,,EEEEeeee,,Amber
+,,,EEEeeeee,,Blue-Green
+,,,EEeeeeee,,Green
+,,,Eeeeeeee,,Blue
+,,,eeeeeeee,,Light Blue
+Eyebrows,16,2,BB,3,Thick Eye brows
+,,,Bb,,Thick Eye brows
+,,,bb,,Thin Eye brows
+Glasses,17,2,GG,3,No Glasses
+,,,Gg,,No Glasses
+,,,gg,,Wears Glasses
+Freckles,18,2,FF,3,No Freckles
+,,,Ff,,Few Freckles
+,,,ff,,Many Freckles
+Hair color,19; 20; 21,6,HHHHHH,7,Black Hair
+,,,HHHHHh,,Brown Hair
+,,,HHHHhh,,Light Brown Hair
+,,,HHHhhh,,Reddish-Brown Hair
+,,,HHhhhh,,Red Hair
+,,,Hhhhhh,,Dirty Blond Hair
+,,,hhhhhh,,Blond Hair
+Hair type,22,2,AA,3,Straight Hair
+,,,Aa,,Straight Hair
+,,,aa,,Curly Hair

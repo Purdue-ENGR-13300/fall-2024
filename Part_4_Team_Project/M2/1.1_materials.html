@@ -1,0 +1,2054 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>10.1.1. Materials &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=13c7fbd9" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_4_Team_Project/M2/1.1_materials';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="10.1.2. Task 0" href="tasks/pre_0/a/instructions.html" />
+    <link rel="prev" title="10.1. Pre-Class Assignments" href="1_pre-class_material.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Purdue University ENGR 13300 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Purdue University ENGR 13300 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Transforming Ideas to Innovation
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_software/course_software.html">Course Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Professional_Preparation/pwl_1_introduction.html">West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_2_career_exploration.html">Career Exploration (EYM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_3_personal_activity.html">Personal Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_4_cultural_experience.html">Cultural Experience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pwl_5_reflections.html">Reflections</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Professional_Preparation/pin_1_introduction.html">Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_2_build_a_schedule.html">Academic Success</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_3_resume.html">Resume Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_4_personal_activity.html">Personal Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_5_cultural_experience.html">Cultural Experience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Professional_Preparation/pin_6_reflections.html">Reflections</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/0_overview.html">1. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/1_pre-class_material.html">1.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/1.1_materials.html">1.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/pre_0/a/instructions.html">1.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/2_team_assignments.html">1.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_1/a/instructions.html">1.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_2/a/instructions.html">1.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_3/a/instructions.html">1.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/3_ind_assignments.html">1.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_1/a/instructions.html">1.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_2/a/instructions.html">1.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/0_overview.html">2. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/pre_0/a/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_1/a/instructions.html">2.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_2/a/instructions.html">2.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_3/a/instructions.html">2.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/3_ind_assignments.html">2.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_1/a/instructions.html">2.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_2/a/instructions.html">2.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/0_overview.html">3. <strong class="program">MS Excel</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/1_pre-class_material.html">3.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/1.1_materials.html">3.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/pre_0/a/instructions.html">3.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/2_team_assignments.html">3.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_1/a/instructions.html">3.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_3/a/instructions.html">3.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_4/a/instructions.html">3.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/3_ind_assignments.html">3.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_1/a/instructions.html">3.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_2/a/instructions.html">3.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dream Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Part_2_Dream_Project/M1/0_overview.html">Dream Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/0_overview.html">4. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/2_team_assignments.html">4.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/team_1/instructions.html">4.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/3_ind_assignments.html">4.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/ind_1/instructions.html">4.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M1/0_overview.html">5. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/1_pre-class_material.html">5.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/1.1_materials.html">5.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/pre_0/a/instructions.html">5.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/2_team_assignments.html">5.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_1/b/instructions.html">5.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_2/a/instructions.html">5.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_3/b/instructions.html">5.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/3_ind_assignments.html">5.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/ind_1/a/instructions.html">5.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/ind_2/b/instructions.html">5.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M2/0_overview.html">6. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/1_pre-class_material.html">6.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/1.1_materials.html">6.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/pre_0/a/instructions.html">6.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/2_team_assignments.html">6.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_1/a/instructions.html">6.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_2/a/instructions.html">6.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_3/a/instructions.html">6.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/3_ind_assignments.html">6.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/ind_1/a/instructions.html">6.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/ind_2/a/instructions.html">6.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M3/0_overview.html">7. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/1_pre-class_material.html">7.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/1.1_materials.html">7.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/pre_0/a/instructions.html">7.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/2_team_assignments.html">7.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_1/a/instructions.html">7.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_2/a/instructions.html">7.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_3/a/instructions.html">7.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/3_ind_assignments.html">7.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/ind_1/a/instructions.html">7.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/ind_2/a/instructions.html">7.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M4/0_overview.html">8. <strong class="program">Python</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/1_pre-class_material.html">8.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/1.1_materials.html">8.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/pre_0/a/instructions.html">8.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/2_team_assignments.html">8.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_1/a/instructions.html">8.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_2/a/instructions.html">8.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_3/a/instructions.html">8.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/3_ind_assignments.html">8.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/ind_1/a/instructions.html">8.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/ind_2/a/instructions.html">8.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Team Project</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M1/0_overview.html">9. Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M1/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M1/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M1/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M1/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_overview.html">10. Checkpoint 2</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="1_pre-class_material.html">10.1. Pre-Class Assignments</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M3/0_overview.html">11. Demo</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/1_team_assignments.html">11.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_1/a/instructions.html">11.1.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_2/a/instructions.html">11.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_3/a/instructions.html">11.1.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/0_overview.html">12. <strong class="program">MATLAB</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/2_team_assignments.html">12.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/team_3/a/instructions.html">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M1/3_ind_assignments.html">12.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/ind_1/a/instructions.html">12.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M1/tasks/ind_2/a/instructions.html">12.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/0_overview.html">13. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/1_pre-class_material.html">13.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/1.1_materials.html">13.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/pre_0/a/instructions.html">13.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/2_team_assignments.html">13.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_1/a/instructions.html">13.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_2/a/instructions.html">13.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/team_3/a/instructions.html">13.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M2/3_ind_assignments.html">13.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/ind_1/a/instructions.html">13.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M2/tasks/ind_2/a/instructions.html">13.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/0_overview.html">14. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/pre_0/a/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_1/a/instructions.html">14.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_2/a/instructions.html">14.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/team_3/a/instructions.html">14.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M3/3_ind_assignments.html">14.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/ind_1/a/instructions.html">14.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M3/tasks/ind_2/a/instructions.html">14.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/0_overview.html">15. <strong class="program">MATLAB</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/1_pre-class_material.html">15.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/1.1_materials.html">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/pre_0/a/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_1/a/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_MATLAB/M4/3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/ind_1/a/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_MATLAB/M4/tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Individual Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_Individual_Project/M1/0_overview.html">16. Individual Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/1_proposal_guidelines.html">16.1. Individual Project Proposal Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/2_project_guidelines.html">16.2. Individual Project Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/3_report_guidelines.html">16.3. Individual Report Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/4_demo_rubric.html">16.4. Individual Project Demo and Report Rubric</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/fall-2024/issues/new?title=Issue%20on%20page%20%2FPart_4_Team_Project/M2/1.1_materials.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Materials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encrypting-text-with-ciphers">Encrypting Text with Ciphers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caesar-cipher">Caesar Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#shifted-alphabet-table-shift-of-3">Shifted Alphabet Table (Shift of 3)</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption-process">Encryption Process</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#decryption-process">Decryption Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xor-cipher">XOR Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-hello-and-engre-to-8-bit-binary">1. Convert “Hello” and “ENGRE” to 8-bit binary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-the-xor-operation">2. Perform the XOR operation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#show-the-output-in-8-bit-binary">3. Show the output in 8-bit binary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4. Decryption Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vigenere-cipher">Vigenère Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encrypting">Encrypting</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decrypting">Decrypting</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption">Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-plaintext-and-keyword">Prepare the Plaintext and Keyword</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-numerical-values">Assign Numerical Values</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-ciphertext">Calculate the Ciphertext</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-numbers-back-to-letters">Convert Numbers Back to Letters</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decryption">Decryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-ciphertext-and-keyword">Prepare the Ciphertext and Keyword</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Assign Numerical Values</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-plaintext">Calculate the Plaintext</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-summary">In summary</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Oct 24, 2024 | 1163 words | 12 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="materials">
+<span id="tp-m2-team-project-1-materials"></span><h1><span class="section-number">10.1.1. </span>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h1>
+<section id="encrypting-text-with-ciphers">
+<h2>Encrypting Text with Ciphers<a class="headerlink" href="#encrypting-text-with-ciphers" title="Link to this heading">#</a></h2>
+<p>Encryption is the process of converting plaintext into ciphertext to secure the
+information. Ciphers are algorithms used to perform encryption and decryption. In this
+project, we’ll explore three types of ciphers: Caesar, XOR, and Vigenère.</p>
+<section id="caesar-cipher">
+<h3>Caesar Cipher<a class="headerlink" href="#caesar-cipher" title="Link to this heading">#</a></h3>
+<p>The “Caesar Cipher” is one of the simplest and oldest encryption techniques.  It is a
+<strong>substitution cipher</strong>, where each letter in the plaintext is shifted by a fixed number
+of positions down or up the alphabet.  For example, with a shift of <span class="math notranslate nohighlight">\(3\)</span>, <code class="docutils literal notranslate"><span class="pre">A</span></code>
+becomes <code class="docutils literal notranslate"><span class="pre">D</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code> becomes <code class="docutils literal notranslate"><span class="pre">E</span></code>, and so on.  The alphabet wraps around, so <code class="docutils literal notranslate"><span class="pre">Z</span></code> would become
+<code class="docutils literal notranslate"><span class="pre">C</span></code>.  Encrypting the plaintext message <code class="docutils literal notranslate"><span class="pre">HELLO</span></code> with a shift of <span class="math notranslate nohighlight">\(3\)</span> would give
+<code class="docutils literal notranslate"><span class="pre">KHOOR</span></code> as the ciphertext.  If a message was encrypted with a shift of <span class="math notranslate nohighlight">\(3\)</span>, we can
+decrypt it by applying the same process with a shift of <span class="math notranslate nohighlight">\(-3\)</span>.  Applying a shift of
+<span class="math notranslate nohighlight">\(-3\)</span> to the ciphertext <code class="docutils literal notranslate"><span class="pre">KHOOR</span></code> would reveal the plaintext <code class="docutils literal notranslate"><span class="pre">HELLO</span></code>.</p>
+<section id="example">
+<h4>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h4>
+<p>For demonstration purposes, below is Caesar cipher example using the plaintext <code class="docutils literal notranslate"><span class="pre">Hello</span></code>
+and shift of <span class="math notranslate nohighlight">\(3\)</span>.</p>
+<section id="shifted-alphabet-table-shift-of-3">
+<h5>Shifted Alphabet Table (Shift of 3)<a class="headerlink" href="#shifted-alphabet-table-shift-of-3" title="Link to this heading">#</a></h5>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id6">
+<caption><span class="caption-number">Table 10.2 </span><span class="caption-text">Plaintext Shift for Upper-case</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Original Letter</strong></p></th>
+<th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>D</p></th>
+<th class="head"><p>E</p></th>
+<th class="head"><p>F</p></th>
+<th class="head"><p>G</p></th>
+<th class="head"><p>H</p></th>
+<th class="head"><p>I</p></th>
+<th class="head"><p>J</p></th>
+<th class="head"><p>K</p></th>
+<th class="head"><p>L</p></th>
+<th class="head"><p>M</p></th>
+<th class="head"><p>N</p></th>
+<th class="head"><p>O</p></th>
+<th class="head"><p>P</p></th>
+<th class="head"><p>Q</p></th>
+<th class="head"><p>R</p></th>
+<th class="head"><p>S</p></th>
+<th class="head"><p>T</p></th>
+<th class="head"><p>U</p></th>
+<th class="head"><p>V</p></th>
+<th class="head"><p>W</p></th>
+<th class="head"><p>X</p></th>
+<th class="head"><p>Y</p></th>
+<th class="head"><p>Z</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Shifted Letter</strong></p></td>
+<td><p>D</p></td>
+<td><p>E</p></td>
+<td><p>F</p></td>
+<td><p>G</p></td>
+<td><p>H</p></td>
+<td><p>I</p></td>
+<td><p>J</p></td>
+<td><p>K</p></td>
+<td><p>L</p></td>
+<td><p>M</p></td>
+<td><p>N</p></td>
+<td><p>O</p></td>
+<td><p>P</p></td>
+<td><p>Q</p></td>
+<td><p>R</p></td>
+<td><p>S</p></td>
+<td><p>T</p></td>
+<td><p>U</p></td>
+<td><p>V</p></td>
+<td><p>W</p></td>
+<td><p>X</p></td>
+<td><p>Y</p></td>
+<td><p>Z</p></td>
+<td><p>A</p></td>
+<td><p>B</p></td>
+<td><p>C</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id7">
+<caption><span class="caption-number">Table 10.3 </span><span class="caption-text">Plaintext Shift for Lower-case</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Original Letter</strong></p></th>
+<th class="head"><p>a</p></th>
+<th class="head"><p>b</p></th>
+<th class="head"><p>c</p></th>
+<th class="head"><p>d</p></th>
+<th class="head"><p>e</p></th>
+<th class="head"><p>f</p></th>
+<th class="head"><p>g</p></th>
+<th class="head"><p>h</p></th>
+<th class="head"><p>i</p></th>
+<th class="head"><p>j</p></th>
+<th class="head"><p>k</p></th>
+<th class="head"><p>l</p></th>
+<th class="head"><p>m</p></th>
+<th class="head"><p>n</p></th>
+<th class="head"><p>o</p></th>
+<th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>r</p></th>
+<th class="head"><p>s</p></th>
+<th class="head"><p>t</p></th>
+<th class="head"><p>u</p></th>
+<th class="head"><p>v</p></th>
+<th class="head"><p>w</p></th>
+<th class="head"><p>x</p></th>
+<th class="head"><p>y</p></th>
+<th class="head"><p>z</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Shifted Letter</strong></p></td>
+<td><p>d</p></td>
+<td><p>e</p></td>
+<td><p>f</p></td>
+<td><p>g</p></td>
+<td><p>h</p></td>
+<td><p>i</p></td>
+<td><p>j</p></td>
+<td><p>k</p></td>
+<td><p>l</p></td>
+<td><p>m</p></td>
+<td><p>n</p></td>
+<td><p>o</p></td>
+<td><p>p</p></td>
+<td><p>q</p></td>
+<td><p>r</p></td>
+<td><p>s</p></td>
+<td><p>t</p></td>
+<td><p>u</p></td>
+<td><p>v</p></td>
+<td><p>w</p></td>
+<td><p>x</p></td>
+<td><p>y</p></td>
+<td><p>z</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+<td><p>c</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="encryption-process">
+<h6>Encryption Process<a class="headerlink" href="#encryption-process" title="Link to this heading">#</a></h6>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id8">
+<caption><span class="caption-number">Table 10.4 </span><span class="caption-text">Encryption</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Original Letter</strong></p></th>
+<th class="head"><p>H</p></th>
+<th class="head"><p>E</p></th>
+<th class="head"><p>L</p></th>
+<th class="head"><p>L</p></th>
+<th class="head"><p>O</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Alphabet Position</strong></p></td>
+<td><p>7</p></td>
+<td><p>4</p></td>
+<td><p>11</p></td>
+<td><p>11</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Shifted Position</strong></p></td>
+<td><p>10</p></td>
+<td><p>7</p></td>
+<td><p>14</p></td>
+<td><p>14</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Shifted Letter</strong></p></td>
+<td><p>K</p></td>
+<td><p>H</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>R</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>Alphabet Position:</strong> Assign numbers to letters where A=0, B=1, …, Z=25.</p></li>
+<li><p><strong>Shifted Position:</strong> Calculated as (Original Position + Shift) mod 26.</p></li>
+<li><p><strong>Shifted Letter:</strong> The letter corresponding to the shifted position.</p></li>
+</ul>
+</div>
+</section>
+<section id="decryption-process">
+<h6>Decryption Process<a class="headerlink" href="#decryption-process" title="Link to this heading">#</a></h6>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id9">
+<caption><span class="caption-number">Table 10.5 </span><span class="caption-text">Decryption</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cipher Letter</strong></p></th>
+<th class="head"><p>K</p></th>
+<th class="head"><p>H</p></th>
+<th class="head"><p>O</p></th>
+<th class="head"><p>O</p></th>
+<th class="head"><p>R</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Alphabet Position</strong></p></td>
+<td><p>10</p></td>
+<td><p>7</p></td>
+<td><p>14</p></td>
+<td><p>14</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Shifted Position</strong></p></td>
+<td><p>7</p></td>
+<td><p>4</p></td>
+<td><p>11</p></td>
+<td><p>11</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Original Letter</strong></p></td>
+<td><p>H</p></td>
+<td><p>E</p></td>
+<td><p>L</p></td>
+<td><p>L</p></td>
+<td><p>O</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="xor-cipher">
+<h3>XOR Cipher<a class="headerlink" href="#xor-cipher" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">XOR</span> <span class="pre">Cipher</span></code> is a type of <code class="docutils literal notranslate"><span class="pre">bitwise</span> <span class="pre">operation</span></code> where each bit of the plaintext is
+combined with a bit from the key using the XOR (exclusive OR) operation.</p>
+<p>How it works:</p>
+<ol class="arabic simple">
+<li><p>Binary Representation: Convert both the plaintext and key into binary.</p></li>
+<li><p>XOR Operation: XOR each bit of the plaintext with the corresponding bit of the key. The XOR operation returns 1 when the bits are different and 0 when they are the same.</p></li>
+<li><p>Encrypting:</p>
+<ul class="simple">
+<li><p>For each bit of the plaintext, apply the XOR operation with the corresponding bit
+of the key.</p></li>
+<li><p>If the key is shorter than the plaintext, it can be repeated (looped over).</p>
+<ul>
+<li><p>Formula: <span class="math notranslate nohighlight">\(\text{Ciphertext} = \text{Plaintext Value} \oplus \text{key}\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Decrypting:</p>
+<ul class="simple">
+<li><p>The XOR operation is its own inverse, meaning applying XOR with the same key again
+will give back the original plaintext.</p>
+<ul>
+<li><p>Formula: <span class="math notranslate nohighlight">\(\text{Plaintext Value} = \text{Ciphertext} \oplus \text{key}\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<section id="id1">
+<h4>Example<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>For demonstration purposes, below is XOR cipher example using the Plaintext Value
+“Hello” and the key “ENGR”.</p>
+<section id="convert-hello-and-engre-to-8-bit-binary">
+<h5>1. Convert “Hello” and “ENGRE” to 8-bit binary<a class="headerlink" href="#convert-hello-and-engre-to-8-bit-binary" title="Link to this heading">#</a></h5>
+<p>Since “Hello” has 5 characters and “ENGR” has 4, we’ll repeat the key to match the
+length, resulting in “ENGRE”.</p>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="plaintext-binary">
+<caption><span class="caption-number">Table 10.6 </span><span class="caption-text">Plaintext: “Hello”</span><a class="headerlink" href="#plaintext-binary" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Character</strong></p></th>
+<th class="head text-center"><p><strong>ASCII Code</strong></p></th>
+<th class="head text-center"><p><strong>Binary</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>H</p></td>
+<td class="text-center"><p>72</p></td>
+<td class="text-center"><p>01001000</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>e</p></td>
+<td class="text-center"><p>101</p></td>
+<td class="text-center"><p>01100101</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>l</p></td>
+<td class="text-center"><p>108</p></td>
+<td class="text-center"><p>01101100</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>l</p></td>
+<td class="text-center"><p>108</p></td>
+<td class="text-center"><p>01101100</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>o</p></td>
+<td class="text-center"><p>111</p></td>
+<td class="text-center"><p>01101111</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="key-binary">
+<caption><span class="caption-number">Table 10.7 </span><span class="caption-text">Key: “ENGRE”</span><a class="headerlink" href="#key-binary" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Character</strong></p></th>
+<th class="head text-center"><p><strong>ASCII Code</strong></p></th>
+<th class="head text-center"><p><strong>Binary</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>E</p></td>
+<td class="text-center"><p>69</p></td>
+<td class="text-center"><p>01000101</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>N</p></td>
+<td class="text-center"><p>78</p></td>
+<td class="text-center"><p>01001110</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>G</p></td>
+<td class="text-center"><p>71</p></td>
+<td class="text-center"><p>01000111</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R</p></td>
+<td class="text-center"><p>82</p></td>
+<td class="text-center"><p>01010010</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>E</p></td>
+<td class="text-center"><p>69</p></td>
+<td class="text-center"><p>01000101</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="perform-the-xor-operation">
+<h5>2. Perform the XOR operation<a class="headerlink" href="#perform-the-xor-operation" title="Link to this heading">#</a></h5>
+<p>We XOR each bit of the plaintext with the corresponding bit of the key.</p>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-h-e">
+<caption><span class="caption-number">Table 10.8 </span><span class="caption-text">First Pair: ‘H’ (01001000) and ‘E’ (01000101) produces 00001101</span><a class="headerlink" href="#xor-h-e" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bit Position</strong></p></th>
+<th class="head"><p><strong>‘H’ Bit</strong></p></th>
+<th class="head"><p><strong>‘E’ Bit</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-e-n">
+<caption><span class="caption-number">Table 10.9 </span><span class="caption-text">Second Pair: ‘e’ (01100101) and ‘N’ (01001110) produces 00101011</span><a class="headerlink" href="#xor-e-n" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bit Position</strong></p></th>
+<th class="head"><p><strong>‘e’ Bit</strong></p></th>
+<th class="head"><p><strong>‘N’ Bit</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-l-g">
+<caption><span class="caption-number">Table 10.10 </span><span class="caption-text">Third Pair: ‘l’ (01101100) and ‘G’ (01000111) produces 00101011</span><a class="headerlink" href="#xor-l-g" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bit Position</strong></p></th>
+<th class="head"><p><strong>‘l’ Bit</strong></p></th>
+<th class="head"><p><strong>‘G’ Bit</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-l-r">
+<caption><span class="caption-number">Table 10.11 </span><span class="caption-text">Fourth Pair: ‘l’ (01101100) and ‘R’ (01010010) produces 00111110</span><a class="headerlink" href="#xor-l-r" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bit Position</strong></p></th>
+<th class="head"><p><strong>‘l’ Bit</strong></p></th>
+<th class="head"><p><strong>‘R’ Bit</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-o-e">
+<caption><span class="caption-number">Table 10.12 </span><span class="caption-text">Fifth Pair: ‘o’ (01101111) and ‘E’ (01000101) produces 00101010</span><a class="headerlink" href="#xor-o-e" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Bit Position</strong></p></th>
+<th class="head"><p><strong>‘o’ Bit</strong></p></th>
+<th class="head"><p><strong>‘E’ Bit</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="show-the-output-in-8-bit-binary">
+<h5>3. Show the output in 8-bit binary<a class="headerlink" href="#show-the-output-in-8-bit-binary" title="Link to this heading">#</a></h5>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The bytes resulting from the XOR operation might not be printable characters.</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="xor-results">
+<caption><span class="caption-number">Table 10.13 </span><span class="caption-text">Output in 8-bit binary</span><a class="headerlink" href="#xor-results" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>XOR Binary</strong></p></th>
+<th class="head text-center"><p><strong>ASCII Code</strong></p></th>
+<th class="head text-center"><p><strong>Character</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>00001101</p></td>
+<td class="text-center"><p>13</p></td>
+<td class="text-center"><p>‘\r’ (Carriage Return)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>00101011</p></td>
+<td class="text-center"><p>43</p></td>
+<td class="text-center"><p>‘+’</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>00101011</p></td>
+<td class="text-center"><p>43</p></td>
+<td class="text-center"><p>‘+’</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>00111110</p></td>
+<td class="text-center"><p>62</p></td>
+<td class="text-center"><p>‘&gt;’</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>00101010</p></td>
+<td class="text-center"><p>42</p></td>
+<td class="text-center"><p>‘*’</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id2">
+<h5>4. Decryption Process<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
+<p>To retrieve the original plaintext, XOR the Ciphertext with the same key “ENGRE”.</p>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id3">
+<caption><span class="caption-number">Table 10.14 </span><span class="caption-text">Decryption Process</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Ciphertext</strong></p></th>
+<th class="head"><p><strong>Cipher Binary</strong></p></th>
+<th class="head"><p><strong>Key</strong></p></th>
+<th class="head"><p><strong>Key Binary</strong></p></th>
+<th class="head"><p><strong>XOR Result</strong></p></th>
+<th class="head"><p><strong>Plaintext</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CR (13)</p></td>
+<td><p>00001101</p></td>
+<td><p>E</p></td>
+<td><p>01000101</p></td>
+<td><p>01001000</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p>‘+’ (43)</p></td>
+<td><p>00101011</p></td>
+<td><p>N</p></td>
+<td><p>01001110</p></td>
+<td><p>01100101</p></td>
+<td><p>e</p></td>
+</tr>
+<tr class="row-even"><td><p>‘+’ (43)</p></td>
+<td><p>00101011</p></td>
+<td><p>G</p></td>
+<td><p>01000111</p></td>
+<td><p>01101100</p></td>
+<td><p>l</p></td>
+</tr>
+<tr class="row-odd"><td><p>‘&gt;’ (62)</p></td>
+<td><p>00111110</p></td>
+<td><p>R</p></td>
+<td><p>01010010</p></td>
+<td><p>01101100</p></td>
+<td><p>l</p></td>
+</tr>
+<tr class="row-even"><td><p>‘*’ (42)</p></td>
+<td><p>00101010</p></td>
+<td><p>E</p></td>
+<td><p>01000101</p></td>
+<td><p>01101111</p></td>
+<td><p>o</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="vigenere-cipher">
+<span id="tp-m2-team-project-1-materials-vigenere"></span><h3>Vigenère Cipher<a class="headerlink" href="#vigenere-cipher" title="Link to this heading">#</a></h3>
+<p>The Vigenère Cipher encrypts messages by shifting each letter of the plaintext by a number of positions determined by a keyword. Unlike the Caesar cipher, which uses a single shift value, the Vigenère cipher uses a sequence of shifts based on the letters of a keyword.</p>
+<section id="how-it-works">
+<h4>How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h4>
+<section id="encrypting">
+<h5>Encrypting<a class="headerlink" href="#encrypting" title="Link to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Prepare the keyword.</p>
+<ul class="simple">
+<li><p>Keyword: Convert to uppercase. If the keyword is shorter than the plaintext, repeat
+it to match the length of the plaintext.</p></li>
+</ul>
+</li>
+<li><p>Assign numerical values.</p>
+<ul class="simple">
+<li><p>Convert each letter in the plaintext and keyword to its corresponding numerical
+value: A = 0, B = 1, …, Z = 25.</p></li>
+<li><p>Use the same numerical values for both uppercase and lowercase letters.</p></li>
+<li><p>For numbers, use the number itself (e.g., 0 for 0, 1 for 1, etc.).</p></li>
+</ul>
+</li>
+<li><p>Calculate the ciphertext.</p>
+<ul class="simple">
+<li><p>For each letter in the plaintext, apply the shift determined by the corresponding
+keyword letter:</p></li>
+<li><p><span class="math notranslate nohighlight">\(\text{Ciphertext Letter Value} = (\text{Plaintext Letter Value} + \text{Keyword Value}) \mod 26\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\text{Ciphertext Number Value} = (\text{Plaintext Number Value} + \text{Keyword Value}) \mod 10\)</span></p></li>
+<li><p>Leave non-alphabetic characters unchanged.</p></li>
+</ul>
+</li>
+<li><p>Convert ciphertext values back to letters or numbers.</p>
+<ul class="simple">
+<li><p>Convert the <span class="math notranslate nohighlight">\(\text{Ciphertext Letter Value}\)</span>s back to letters.</p></li>
+<li><p>Convert the <span class="math notranslate nohighlight">\(\text{Ciphertext Number Value}\)</span>s back to numbers.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="decrypting">
+<h5>Decrypting<a class="headerlink" href="#decrypting" title="Link to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Prepare the Keyword.</p>
+<ul class="simple">
+<li><p>Ensure keyword is in uppercase.</p></li>
+</ul>
+</li>
+<li><p>Assign numerical values.</p>
+<ul class="simple">
+<li><p>As in encryption, assign numerical values to the letters and numbers.</p></li>
+</ul>
+</li>
+<li><p>Calculate the plaintext values by reversing the encryption process.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\text{Plaintext Letter Value} = (\text{Ciphertext Letter Value} - \text{Keyword Value}) \mod 26\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\text{Plaintext Number Value} = (\text{Ciphertext Number Value} - \text{Keyword Value}) \mod 10\)</span></p></li>
+</ul>
+</li>
+<li><p>Convert the numerical plaintext values back to a letter or numbers.</p>
+<ul class="simple">
+<li><p>Convert the <span class="math notranslate nohighlight">\(\text{Plaintext Letter Value}\)</span>s back to letters.</p></li>
+<li><p>Convert the <span class="math notranslate nohighlight">\(\text{Plaintext Number Value}\)</span>s back to numbers.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="id4">
+<h4>Example<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p>For demonstration purposes, below is Vigenère cipher example using the plaintext
+<code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">123</span></code> and keyword of <code class="docutils literal notranslate"><span class="pre">Key</span></code>.</p>
+<section id="encryption">
+<h5>Encryption<a class="headerlink" href="#encryption" title="Link to this heading">#</a></h5>
+<section id="prepare-the-plaintext-and-keyword">
+<h6>Prepare the Plaintext and Keyword<a class="headerlink" href="#prepare-the-plaintext-and-keyword" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Plaintext: <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">12</span></code></p></li>
+<li><p>Keyword: <code class="docutils literal notranslate"><span class="pre">Key</span></code></p></li>
+<li><p>Repeat Key to match length of Plaintext, as shown below</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id10">
+<caption><span class="caption-number">Table 10.15 </span><span class="caption-text">Extend the Keyword</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Plaintext Letter</strong></p></th>
+<th class="head"><p>H</p></th>
+<th class="head"><p>e</p></th>
+<th class="head"><p>l</p></th>
+<th class="head"><p>l</p></th>
+<th class="head"><p>o</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Keyword Letter</strong></p></td>
+<td><p>K</p></td>
+<td><p>E</p></td>
+<td><p>Y</p></td>
+<td><p>K</p></td>
+<td><p>E</p></td>
+<td><p>Y</p></td>
+<td><p>K</p></td>
+<td><p>E</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Extended Keyword: <code class="docutils literal notranslate"><span class="pre">KEYKEYKE</span></code> (Note that we’ve converted it to uppercase.)</p></li>
+</ul>
+</section>
+<section id="assign-numerical-values">
+<h6>Assign Numerical Values<a class="headerlink" href="#assign-numerical-values" title="Link to this heading">#</a></h6>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id11">
+<caption><span class="caption-number">Table 10.16 </span><span class="caption-text">Convert Letters to Numbers</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Letter</strong></p></th>
+<th class="head"><p><strong>Numeric Value</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>L</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-even"><td><p>O</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>K</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="calculate-the-ciphertext">
+<h6>Calculate the Ciphertext<a class="headerlink" href="#calculate-the-ciphertext" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>For each letter, calculate:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\text{Ciphertext Letter Value} = (\text{Plaintext Letter Value} + \text{Keyword Value}) \mod 26\)</span></p></li>
+</ul>
+</li>
+<li><p>For each number, calculate:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\text{Ciphertext Number Value} = (\text{Plaintext Number Value} + \text{Keyword Value}) \mod 10\)</span></p></li>
+</ul>
+</li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id12">
+<caption><span class="caption-number">Table 10.17 </span><span class="caption-text">Calculate Shifted Positions</span><a class="headerlink" href="#id12" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Position</strong></p></th>
+<th class="head"><p><strong>Plaintext Letter</strong></p></th>
+<th class="head"><p><strong>Plaintext Value</strong></p></th>
+<th class="head"><p><strong>Keyword Letter</strong></p></th>
+<th class="head"><p><strong>Keyword Value</strong></p></th>
+<th class="head"><p><strong>Cipher Value</strong></p></th>
+<th class="head"><p><strong>Cipher Character</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>H</p></td>
+<td><p>7</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>( 7 + 10) % 26 = 17</p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>e</p></td>
+<td><p>4</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>( 4 +  4) % 26 =  8</p></td>
+<td><p>i</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>l</p></td>
+<td><p>11</p></td>
+<td><p>Y</p></td>
+<td><p>24</p></td>
+<td><p>(11 + 24) % 26 =  9</p></td>
+<td><p>j</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>l</p></td>
+<td><p>11</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>(11 + 10) % 26 = 21</p></td>
+<td><p>v</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>o</p></td>
+<td><p>14</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>(14 +  4) % 26 = 18</p></td>
+<td><p>s</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>Y</p></td>
+<td><p>24</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>( 1 + 10) % 10 =  1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>( 2 +  4) % 10 =  6</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="convert-numbers-back-to-letters">
+<h6>Convert Numbers Back to Letters<a class="headerlink" href="#convert-numbers-back-to-letters" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Ciphertext: <code class="docutils literal notranslate"><span class="pre">Rijvs</span> <span class="pre">16</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="decryption">
+<h5>Decryption<a class="headerlink" href="#decryption" title="Link to this heading">#</a></h5>
+<p>To decrypt the ciphertext <code class="docutils literal notranslate"><span class="pre">Rijvs</span> <span class="pre">16</span></code> using the same keyword <code class="docutils literal notranslate"><span class="pre">Key</span></code>, we reverse the
+encryption process.</p>
+<section id="prepare-the-ciphertext-and-keyword">
+<h6>Prepare the Ciphertext and Keyword<a class="headerlink" href="#prepare-the-ciphertext-and-keyword" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Ciphertext: <code class="docutils literal notranslate"><span class="pre">Rijvs</span> <span class="pre">16</span></code></p></li>
+<li><p>Keyword: <code class="docutils literal notranslate"><span class="pre">Key</span></code></p></li>
+<li><p>Repeat the uppercase key to match length of Ciphertext: <code class="docutils literal notranslate"><span class="pre">KEYKEYKE</span></code></p></li>
+</ul>
+</section>
+<section id="id5">
+<h6>Assign Numerical Values<a class="headerlink" href="#id5" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Using the same numerical values as before.</p></li>
+</ul>
+</section>
+<section id="calculate-the-plaintext">
+<h6>Calculate the Plaintext<a class="headerlink" href="#calculate-the-plaintext" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\text{Plaintext Letter Value} = (\text{Ciphertext Letter Value} - \text{Keyword Value}) \mod 26\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\text{Plaintext Number Value} = (\text{Ciphertext Number Value} - \text{Keyword Value}) \mod 10\)</span></p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id13">
+<caption><span class="caption-number">Table 10.18 </span><span class="caption-text">Calculate Shifted Positions</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Position</strong></p></th>
+<th class="head"><p><strong>Cipher Letter</strong></p></th>
+<th class="head"><p><strong>Cipher Value</strong></p></th>
+<th class="head"><p><strong>Keyword Letter</strong></p></th>
+<th class="head"><p><strong>Keyword Value</strong></p></th>
+<th class="head"><p><strong>Plaintext Value</strong></p></th>
+<th class="head"><p><strong>Plaintext Letter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>R</p></td>
+<td><p>17</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>(17 - 10) % 26 = 7</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>i</p></td>
+<td><p>8</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>( 8 -  4) % 26 = 4</p></td>
+<td><p>e</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>j</p></td>
+<td><p>9</p></td>
+<td><p>Y</p></td>
+<td><p>24</p></td>
+<td><p>( 9 - 24) % 26 = 11</p></td>
+<td><p>l</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>v</p></td>
+<td><p>21</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>(21 - 10) % 26 = 11</p></td>
+<td><p>l</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>s</p></td>
+<td><p>18</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>(18 -  4) % 26 = 14</p></td>
+<td><p>o</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>Y</p></td>
+<td><p>24</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>K</p></td>
+<td><p>10</p></td>
+<td><p>( 1 - 10) % 10 =  1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>6</p></td>
+<td><p>1</p></td>
+<td><p>E</p></td>
+<td><p>4</p></td>
+<td><p>( 6 -  4) % 10 =  2</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="in-summary">
+<h3>In summary<a class="headerlink" href="#in-summary" title="Link to this heading">#</a></h3>
+<p>Caesar Cipher: Decryption is simply the encryption process with a negative shift.</p>
+<p>XOR Cipher: Encryption and decryption use the same operation.</p>
+<p>Vigenère Cipher: Has distinct processes for encryption and decryption, although both
+involve shifting letters based on a keyword.  The difference lies in the direction of the
+shift for each operation.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_4_Team_Project/M2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1_pre-class_material.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10.1. </span>Pre-Class Assignments</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tasks/pre_0/a/instructions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">10.1.2. </span>Task 0</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encrypting-text-with-ciphers">Encrypting Text with Ciphers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caesar-cipher">Caesar Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#shifted-alphabet-table-shift-of-3">Shifted Alphabet Table (Shift of 3)</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption-process">Encryption Process</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#decryption-process">Decryption Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xor-cipher">XOR Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-hello-and-engre-to-8-bit-binary">1. Convert “Hello” and “ENGRE” to 8-bit binary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-the-xor-operation">2. Perform the XOR operation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#show-the-output-in-8-bit-binary">3. Show the output in 8-bit binary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4. Decryption Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vigenere-cipher">Vigenère Cipher</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encrypting">Encrypting</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decrypting">Decrypting</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption">Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-plaintext-and-keyword">Prepare the Plaintext and Keyword</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-numerical-values">Assign Numerical Values</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-ciphertext">Calculate the Ciphertext</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-numbers-back-to-letters">Convert Numbers Back to Letters</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decryption">Decryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-ciphertext-and-keyword">Prepare the Ciphertext and Keyword</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Assign Numerical Values</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-plaintext">Calculate the Plaintext</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-summary">In summary</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/fall-2024/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
